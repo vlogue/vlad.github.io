@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+/*Use this class when you want your content to be hidden*/
+.BeforeScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: none;
+}
+
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+  .
+  .
+  display: block;
+}
+.mySlides {display:none;}
+a{
+  color: #7289DA
+}
+
+#footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2C2F33;
+   color: #7289DA;
+   text-align: center;
+    opacity: 0.9
+
+}
+body {
+
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #2C2F33;
+  opacity: 0.90;
+  position: fixed;
+  width: 100%;
+  top:-10;
+
+}
+
+
+.topnav a {
+  float: left;
+  color: #7289DA;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  size:100% 100%;
+}
+
+.topnav a:hover {
+  background-color: #23272A;
+  color: #99AAB5;
+  opacity:0.5;
+}
+
+.topnav a.active {
+  background-color: #23272A;
+  color: white;
+}
+body{
+  background-image: url("family.jpg");
+  background-size: 700px;
+  background-repeat:no-repeat;
+  background-size: 100% 60%;
+  top:0px;
+}
+
+.first_sen{
+  color:#7289DA;
+  font-family: 'Nunito', sans-serif;
+  size:20px;
+  background-color:rgba(44, 47, 51, 0.7);
+
+ 
+}
+
+
+#desc{
+  background-color: rgba(44, 47, 51, 0.7);
+  color:#7289DA;
+}
+
+.lining{
+  float: left;
+  width: 50%;
+  margin-bottom: 50px;
+  margin-left: 50px
+}
+
+#zantos{
+  width:35%;
+
+}
+
+#zantos2{
+  width:40%;
+
+}
+
+.w3-section{
+  margin-top: 250px!important;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="topnav" style="top: 0px;">
+  <a class="active" href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="videos.html">Videos</a>
+  <a href="https://streamlabs.com/je_t">Donate</a>
+</div>
+
+<div style="padding-left:16px; text-align: center; padding:250px;">
+  
+  <div class="first_sen">
+    <h3 ><strong><em> Hey, I'm </em></strong><br><h1> ━━ Vlad Gogalniceanu ━━</h1></h3>
+  </div>
+  
+
+  <p id="desc">Hello there. My name is Vlad and I'm currently writing about my life. Nice to meet you, fellow human!<br>━━━━━━━━━▲━━━━━━━━━</br>I was born in Iasi, Romaina on the 7th of March 2005, growing up, my parents were <strong>very</strong> rich. Some say I was the luckiest child in the town beause I had a room full of toys.</p>
+
+</div>
+
+
+
+<div class="w3-content w3-section" style="width: 100%; background-color: white;">
+  <div class="mySlides">
+   <img class="lining" src="dad_and_me.jpg" id=zantos2 style="height: 400px">
+   <p class="lining" style="margin-left: 100px"><h1>Zantos, Zakynthos | 2016</h1>My Dad and I the first time we arrived at the hotel. We were very excited. </p>
+  </div>
+  <div class="mySlides">
+  <img class="lining" src="family2.jpg" style="height: 400px">
+  <p class="lining" style="padding:left ;  margin-left: 100px;"><h1>Iasi, Romainia | 2011</h1>This is a picture in Iasi, Romania outside a popular McDonalds. I met with my uncle, my auntie and my cousin the first time in about a year. They live in Kuwait so I don't get to see them a lot.</p>
+  </div>
+  <div class="mySlides">
+  <img class="lining" src="dad_and_me2.jpg" style="height: 400px">
+  <p class="lining" style="padding:left;  margin-left: 100px"><h1>Thorpe Park | 2016</h1>This picture highlights the good time my Dad and I had at Thorpe Park 2016, we went on a lot of rides and ate a lot too. I was scared in the beginning but it wasn't too scary.</p>
+  </div>
+  <div class="mySlides">
+  <img class="lining" id="zantos" src="car_me.jpg" style="height: 400px">
+  <p class="lining" style="padding:left; margin-left: 100px;"><h1>Zantos, Zakynthos | 2016</h1> 
+  This was in Zantos, where they have the best Salmon and Rice I've ever tasted. It's one of the most beautiful countries I have been to, there are many things to do, like AquaParks, Shops and Volcanoes.</p>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5500); // Change image every 2 seconds
+}
+</script>
+
+<div id="player">
+    <audio autoplay>
+     <source src="boxinlion.mp3" type="audio/mpeg">
+                If you're reading this, audio isn't supported. 
+    </audio>
+</div>
+
+<div>
+  
+</div>
+
+<div id="footer" style="clear:both;padding-top: 20px; bottom:0px;">
+  <p>© Vlad Gogalniceanu LLC |<a href="https://www.iubenda.com/privacy-policy/75395428"> Privacy Policy,</a><a href="tos.html"> Terms of Service</a></p>
+
+</div>
+
+</body>
+</html>

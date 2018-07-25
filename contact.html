@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+<style>
+#footer{
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2C2F33;
+   color: #7289DA;
+   text-align: center;
+    opacity: 0.9
+
+}
+body {
+
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #2C2F33;
+  opacity: 0.90;
+  position: fixed;
+  width:100%;
+
+}
+
+
+.topnav a {
+  float: left;
+  color: #7289DA;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #23272A;
+  color: #99AAB5;
+  opacity:0.5;
+}
+
+.topnav a.active {
+  background-color: #23272A;
+  color: white;
+}
+body{
+  background-image: url("family.jpg");
+  background-size: 700px;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  height: 1000px;
+}
+
+.first_sen{
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  size:20px;
+}
+
+#second_sen{
+  color:white;
+  font-family: 'Gaegu', cursive;
+  size:50px;
+}
+#formular{
+  padding-top: 100px;
+}
+
+#formular input[type=text]{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color:;
+}
+
+.connect{
+  color: #7289DA
+
+}
+</style>
+</head>
+<body>
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="77be01ac-b924-4ee9-af67-ba5bea04718d";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<div class="topnav" style="top: 0px;">
+  <a href="home.html">Home</a>
+  <a href="about.html">About</a>
+  <a class="active" href="contact.html">Contact</a>
+
+  <a href="videos.html"> Videos </a>
+
+</div>
+
+
+<form id="formular">
+  First Name: <br>
+  <input type="text" name="First Name" id="name"> <br>
+  Last Name: <br>
+  <input type="text" name="Last Name" id="last-name"> <br>
+  Message:<br>
+  <textarea>Your Message</textarea>
+  <br>
+  <button id=submitButton onclick="myScript()">Submit</button>
+<h1 class="connect"> Contact </h1>
+<p class="connect"><strong>Thank you for choosing to contact me, I check email very frequently and I will be sure to reply to your message as soon as I can.</strong></p>
+
+
+</form>
+
+
+<script>
+function myScript() {
+    if(document.getElementById("name").value != "")
+      if(document.getElementById("last-name").value != "")
+        alert("Success: ticket submitted!");
+      else
+        alert("Error: value missing.")
+    else 
+      alert("Error: value missing.")
+}
+</script>
+<div id="footer" style="clear:both;padding-top: 20px;">
+  <p>© Vlad Gogalniceanu LLC |<a href="https://www.iubenda.com/privacy-policy/75395428"> Privacy Policy,</a><a href="tos.html"> Terms of Service</a></p>
+
+<div id="player">
+    <audio autoplay>
+     <source src="boxinlion.mp3" type="audio/mpeg">
+                If you're reading this, audio isn't supported. 
+    </audio>
+</div>
+</body>
+</html>
